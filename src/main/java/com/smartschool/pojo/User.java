@@ -1,13 +1,14 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.List;
-
-@Entity
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+import java.util.*;
+import javax.persistence.*;
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,10 +16,13 @@ public class User {
 
     private String fname;
     private String lname;
-    private String email;
     private String username;
     private String image;
     private String phone;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Account> accounts;
+
 
     public Long getId() {
         return id;
@@ -44,13 +48,6 @@ public class User {
         this.lname = lname;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getUsername() {
         return username;
@@ -74,5 +71,13 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
     }
 }

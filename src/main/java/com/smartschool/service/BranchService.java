@@ -4,6 +4,7 @@ import com.smartschool.pojo.Branch;
 import com.smartschool.repository.BranchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 @Service
 public class BranchService {

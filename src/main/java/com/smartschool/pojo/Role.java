@@ -1,16 +1,17 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-@Entity
+import javax.persistence.*;
+import java.util.List;
+
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Role {
     public Long getId() {
         return id;
@@ -32,5 +33,9 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    @OneToMany(mappedBy = "role")
+    private List<Account> accounts;
+
 
 }

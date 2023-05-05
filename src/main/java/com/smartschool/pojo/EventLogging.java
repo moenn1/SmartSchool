@@ -1,20 +1,19 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jdk.jfr.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
+import javax.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
+
+@Component
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class EventLogging {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String event;
     private String description;

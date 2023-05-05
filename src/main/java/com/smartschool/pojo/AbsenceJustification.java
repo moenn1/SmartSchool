@@ -1,11 +1,14 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-@Entity
+import javax.persistence.*;
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Table(name = "absence_justification")
 public class AbsenceJustification {
     @Id

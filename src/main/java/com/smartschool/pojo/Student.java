@@ -1,15 +1,18 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Entity
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Student extends User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

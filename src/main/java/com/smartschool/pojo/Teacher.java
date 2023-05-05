@@ -1,15 +1,17 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Teacher extends User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

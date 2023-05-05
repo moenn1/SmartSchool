@@ -1,13 +1,16 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
 import java.util.*;
 
-@Entity
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class SessionType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

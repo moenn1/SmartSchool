@@ -1,15 +1,17 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-import lombok.*;
-
+import javax.persistence.*;
 import java.util.*;
 
-@Entity
+@Component
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Subject {
     public Long getId() {
         return id;

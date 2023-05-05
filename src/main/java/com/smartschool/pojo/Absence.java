@@ -1,13 +1,14 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-import lombok.*;
-import org.hibernate.Session;
-
+import javax.persistence.*;
 import java.util.*;
 
+@Component
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor

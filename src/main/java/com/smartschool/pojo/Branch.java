@@ -1,14 +1,18 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Component
 @Entity
 public class Branch {
     @Id

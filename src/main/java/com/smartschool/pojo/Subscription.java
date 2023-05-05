@@ -1,14 +1,16 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
 import java.util.*;
 
-@Entity
+@Component
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Subscription {
 
     @Id

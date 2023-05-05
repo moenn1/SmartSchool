@@ -1,12 +1,15 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-@Entity
+import javax.persistence.*;
+
+@Component
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Module {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

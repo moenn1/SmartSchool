@@ -1,19 +1,25 @@
 package com.smartschool.pojo;
 
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Component
 @Entity
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String login;
+    private String username;
+    private String email;
+
+
     private String password;
     private boolean active;
 
@@ -25,12 +31,20 @@ public class Account {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
+    }
+    public String getEmail() {
+        return email;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

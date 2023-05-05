@@ -4,7 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2c9f3f-9e4f-49d0-aca4-711e7bf94f24" name="Changes" comment="" />
+    <list default="true" id="6f2c9f3f-9e4f-49d0-aca4-711e7bf94f24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/security/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Absence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Absence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/AbsenceJustification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/AbsenceJustification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/EventLogging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/EventLogging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/SessionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/SessionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/BranchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/BranchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/EventLoggingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/EventLoggingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/LevelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/LevelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/ModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/ModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/SmartschoolApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/SmartschoolApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/controller/AbsenceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/controller/AbsenceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Absence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Absence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/AbsenceJustification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/AbsenceJustification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/EventLogging.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/EventLogging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Module.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Module.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/SessionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/SessionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Subscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Subscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AbsenceJustificationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AbsenceJustificationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AbsenceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AbsenceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/BranchRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/BranchRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/EventLoggingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/EventLoggingRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/LevelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/LevelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/ModuleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/ModuleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SessionTypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SessionTypeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SubjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SubjectRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/SubscriptionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/TeacherRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/TeacherRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/AbsenceJustificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/AbsenceJustificationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/AbsenceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/AbsenceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/BranchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/BranchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/EventLoggingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/EventLoggingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/LevelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/LevelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/ModuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/ModuleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/SessionTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/SessionTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/SubjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/SubscriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/SubscriptionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/TeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/TeacherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +94,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,12 +115,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2PFD0slS9fGoyZxPQkUmNyiTYVr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -81,7 +165,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683043723215</updated>
       <workItem from="1683043723459" duration="1878000" />
-      <workItem from="1683217136739" duration="9114000" />
+      <workItem from="1683217136739" duration="10263000" />
+      <workItem from="1683297940342" duration="5832000" />
     </task>
     <servers />
   </component>

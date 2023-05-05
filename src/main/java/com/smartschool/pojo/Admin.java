@@ -1,15 +1,15 @@
 package com.smartschool.pojo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
-@Entity
+import javax.persistence.*;
+
+@Component
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Admin extends User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
