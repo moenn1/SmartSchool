@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -45,15 +46,6 @@ public class Student extends User{
         this.dob = dob;
     }
 
-    public Subscription getSubscription() {
-        return subscription;
-    }
 
-    public void setSubscription(Subscription subscription) {
-        this.subscription = subscription;
-    }
 
-    @ManyToOne
-    @JoinColumn(name = "subscription_id", nullable = false)
-    private Subscription subscription;
 }

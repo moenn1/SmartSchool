@@ -2,12 +2,14 @@ package com.smartschool.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.stereotype.Component;
 import java.util.*;
 import javax.persistence.*;
 @Component
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Entity
 public class User {
     @Id
@@ -16,9 +18,12 @@ public class User {
 
     private String fname;
     private String lname;
-    private String username;
     private String image;
     private String phone;
+
+    @ManyToOne
+    @JoinColumn(name = "subscription_id", insertable = false, updatable = false)
+    private Subscription subscription;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Account> accounts;
@@ -49,13 +54,6 @@ public class User {
     }
 
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getImage() {
         return image;
@@ -80,4 +78,21 @@ public class User {
     public void setAccounts(List<Account> accounts) {
         this.accounts = accounts;
     }
+
+    public void addAccount(Account account){
+        if(accounts == null){
+            accounts = new ArrayList<>();
+        }
+        accounts.add(account);
+        account.setUser(this);
+    }
+
+    public Subscription getSubscription() {
+        return subscription;
+    }
+
+    public void setSubscription(Subscription subscription) {
+        this.subscription = subscription;
+    }
+
 }
