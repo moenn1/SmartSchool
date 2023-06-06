@@ -4,8 +4,10 @@ import com.smartschool.pojo.Subject;
 import com.smartschool.repository.SubjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class SubjectService {
     @Autowired
     SubjectRepository subjectRepository;

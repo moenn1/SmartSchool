@@ -4,8 +4,10 @@ import com.smartschool.pojo.Teacher;
 import com.smartschool.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class TeacherService {
     @Autowired
     TeacherRepository teacherRepository;
@@ -52,6 +54,18 @@ public class TeacherService {
 
     public Iterable<Teacher> saveAll(Iterable<Teacher> teachers) {
         return teacherRepository.saveAll(teachers);
+    }
+
+    public Teacher findByUsername(String username) {
+        return teacherRepository.findByUsername(username);
+    }
+
+    public Teacher findByEmail(String email) {
+        return teacherRepository.findByEmail(email);
+    }
+
+    public Teacher findByCin(String cin) {
+        return teacherRepository.findByCin(cin);
     }
 
 }

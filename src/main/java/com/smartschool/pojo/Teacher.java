@@ -18,6 +18,8 @@ public class Teacher extends User{
     private Long id;
     private String specialty;
 
+    private String cin;
+
     @OneToOne
     @JoinColumn(name = "branch_id")
     private Branch branch;
@@ -51,6 +53,14 @@ public class Teacher extends User{
 
     public List<Absence> getAbsences() {
         return absences;
+    }
+
+    public String getCin() {
+        return cin;
+    }
+
+    public void setCin(String cin) {
+        this.cin = cin;
     }
 
     public void setAbsences(List<Absence> absences) {

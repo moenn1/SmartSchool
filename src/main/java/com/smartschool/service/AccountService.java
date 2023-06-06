@@ -5,8 +5,10 @@ import com.smartschool.pojo.Account;
 import com.smartschool.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class AccountService {
     @Autowired
     private AccountRepository accountRepository;
@@ -63,7 +65,7 @@ public class AccountService {
         return accountRepository.findAllById(iterable);
     }
 
-    /*
+
     public Account findByUsername(String username) {
         return accountRepository.findByUsername(username);
     }
@@ -71,7 +73,7 @@ public class AccountService {
     public Account findByEmail(String email) {
         return accountRepository.findByEmail(email);
     }
-
+/*
     public Account findByUsernameAndPassword(String username, String password) {
         return accountRepository.findByUsernameAndPassword(username, password);
     }

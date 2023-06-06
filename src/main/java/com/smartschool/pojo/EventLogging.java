@@ -4,8 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDateTime;
 
 @Component
 @AllArgsConstructor
@@ -17,10 +21,18 @@ public class EventLogging {
     private Long id;
     private String event;
     private String description;
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private String dateTime;
+
+    @Column(nullable = false, updatable = false)
+    @CreationTimestamp
+    private LocalDateTime dateTime;
 
     private int priority;
+
+    public EventLogging(String event, String description) {
+        this.event = event;
+        this.description = description;
+        this.priority = 1;
+    }
 
     public Long getId() {
         return id;
@@ -46,11 +58,11 @@ public class EventLogging {
         this.description = description;
     }
 
-    public String getDateTime() {
+    public LocalDateTime getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(String dateTime) {
+    public void setDateTime(LocalDateTime dateTime) {
         this.dateTime = dateTime;
     }
 

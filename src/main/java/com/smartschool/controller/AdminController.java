@@ -19,6 +19,11 @@ import java.util.*;
 @RequestMapping("/admin")
 @Controller
 public class AdminController {
+    private String event = "admin";
+
+    @Autowired
+    EventLoggingService eventLoggingService;
+
     @Autowired
     StudentService studentService;
 
@@ -37,6 +42,7 @@ public class AdminController {
     @GetMapping("/students")
     public String overview(Model model) {
         model.addAttribute("students", studentService.findAll());
+        eventLoggingService.save(new EventLogging(event, "overview"));
         return "studentOverview";
     }
 
@@ -59,11 +65,13 @@ public class AdminController {
             }
             model.addAttribute("student", student);
         }
+        eventLoggingService.save(new EventLogging(event, "search"));
         return "studentOverview";
     }
 
     @GetMapping("/addStudent")
     public String addStudentPage(){
+        eventLoggingService.save(new EventLogging(event, "addStudentPage"));
         return "addStudent";
     }
 
@@ -74,6 +82,7 @@ public class AdminController {
             model.addAttribute("error", "CNE already exists");
             return "addStudent";
         }
+        eventLoggingService.save(new EventLogging(event, "addStudent"));
         studentService.save(student);
         return "studentOverview";
     }
@@ -87,6 +96,7 @@ public class AdminController {
         }
         studentService.deleteById(id);
         model.addAttribute("students", studentService.findAll());
+        eventLoggingService.save(new EventLogging(event, "deleteStudent"));
         return "studentOverview";
     }
 
@@ -99,6 +109,7 @@ public class AdminController {
             return "studentOverview";
         }
         model.addAttribute("student", student);
+        eventLoggingService.save(new EventLogging(event, "editStudentPage"));
         return "editStudent";
     }
 
@@ -111,6 +122,7 @@ public class AdminController {
         }
         studentService.save(student);
         model.addAttribute("students", studentService.findAll());
+        eventLoggingService.save(new EventLogging(event, "editStudent"));
         return "studentOverview";
     }
 
@@ -138,27 +150,32 @@ public class AdminController {
             csvWriter.write(user, nameMapping);
         }
         csvWriter.close();
+        eventLoggingService.save(new EventLogging(event, "exportToCSV"));
     }
 
 
     @GetMapping("/elements")
     public String elementsPage(){
+        eventLoggingService.save(new EventLogging(event, "elementsPage"));
         return "elements";
     }
 
 
     @GetMapping("/modules")
     public String modulesPage(){
+        eventLoggingService.save(new EventLogging(event, "modulesPage"));
         return "modules";
     }
 
     @GetMapping("/classes")
     public String classesPage(){
+        eventLoggingService.save(new EventLogging(event, "classesPage"));
         return "classes";
     }
 
     @GetMapping("/branches")
     public String branchesPage(){
+        eventLoggingService.save(new EventLogging(event, "branchesPage"));
         return "branches";
     }
 
@@ -166,6 +183,7 @@ public class AdminController {
 
     @GetMapping("/addModule")
     public String addModulePage(){
+        eventLoggingService.save(new EventLogging(event, "addModulePage"));
         return "addModule";
     }
 
@@ -176,6 +194,7 @@ public class AdminController {
             return "addModule";
         }
         moduleService.save(module);
+        eventLoggingService.save(new EventLogging(event, "addModule"));
         return "modules";
     }
 
@@ -187,6 +206,7 @@ public class AdminController {
         }
         moduleService.deleteById(id);
         model.addAttribute("modules", moduleService.findAll());
+        eventLoggingService.save(new EventLogging(event, "deleteModule"));
         return "modules";
     }
 
@@ -198,6 +218,7 @@ public class AdminController {
             return "modules";
         }
         model.addAttribute("module", module);
+        eventLoggingService.save(new EventLogging(event, "editModulePage"));
         return "editModule";
     }
 
@@ -209,6 +230,7 @@ public class AdminController {
         }
         moduleService.save(module);
         model.addAttribute("modules", moduleService.findAll());
+        eventLoggingService.save(new EventLogging(event, "editModule"));
         return "modules";
     }
 
@@ -229,6 +251,7 @@ public class AdminController {
             }
             model.addAttribute("module", module);
         }
+        eventLoggingService.save(new EventLogging(event, "searchModule"));
         return "modules";
     }
 
@@ -245,6 +268,7 @@ public class AdminController {
             return "addClass";
         }
         levelService.save(classe);
+        eventLoggingService.save(new EventLogging(event, "addClass"));
         return "classes";
     }
 
@@ -256,6 +280,7 @@ public class AdminController {
         }
         levelService.deleteById(id);
         model.addAttribute("classes", levelService.getAllLevels());
+        eventLoggingService.save(new EventLogging(event, "deleteClass"));
         return "classes";
     }
 
@@ -267,6 +292,7 @@ public class AdminController {
             return "classes";
         }
         model.addAttribute("classe", classe);
+        eventLoggingService.save(new EventLogging(event, "editClassPage"));
         return "editClass";
     }
 
@@ -278,6 +304,7 @@ public class AdminController {
         }
         levelService.save(classe);
         model.addAttribute("classes", levelService.getAllLevels());
+        eventLoggingService.save(new EventLogging(event, "editClass"));
         return "classes";
     }
 
@@ -298,12 +325,14 @@ public class AdminController {
             }
             model.addAttribute("classe", classe);
         }
+        eventLoggingService.save(new EventLogging(event, "searchClass"));
         return "classes";
     }
 
     //Crud for branch
     @GetMapping("/addBranch")
     public String addBranchPage(){
+        eventLoggingService.save(new EventLogging(event, "addBranchPage"));
         return "addBranch";
     }
 
@@ -314,6 +343,7 @@ public class AdminController {
             return "addBranch";
         }
         branchService.saveBranch(branch);
+        eventLoggingService.save(new EventLogging(event, "addBranch"));
         return "branches";
     }
 
@@ -325,6 +355,7 @@ public class AdminController {
         }
         branchService.deleteBranchById(id);
         model.addAttribute("branches", branchService.getAllBranches());
+        eventLoggingService.save(new EventLogging(event, "deleteBranch"));
         return "branches";
     }
 
@@ -336,6 +367,7 @@ public class AdminController {
             return "branches";
         }
         model.addAttribute("branch", branch);
+        eventLoggingService.save(new EventLogging(event, "editBranchPage"));
         return "editBranch";
     }
 
@@ -347,6 +379,7 @@ public class AdminController {
         }
         branchService.saveBranch(branch);
         model.addAttribute("branches", branchService.getAllBranches());
+        eventLoggingService.save(new EventLogging(event, "editBranch"));
         return "branches";
     }
 
@@ -367,6 +400,7 @@ public class AdminController {
             }
             model.addAttribute("branch", branch);
         }
+        eventLoggingService.save(new EventLogging(event, "searchBranch"));
         return "branches";
     }
 
@@ -380,6 +414,7 @@ public class AdminController {
         }
         model.addAttribute("classe", classe);
         model.addAttribute("modules", moduleService.findAll());
+        eventLoggingService.save(new EventLogging(event, "addModuleToClassPage"));
         return "addModuleToClass";
     }
 
@@ -398,6 +433,7 @@ public class AdminController {
         classe.getModules().add(module);
         levelService.save(classe);
         model.addAttribute("classes", levelService.getAllLevels());
+        eventLoggingService.save(new EventLogging(event, "addModuleToClass"));
         return "classes";
     }
 
@@ -411,6 +447,7 @@ public class AdminController {
         }
         model.addAttribute("branch", branch);
         model.addAttribute("classes", levelService.getAllLevels());
+        eventLoggingService.save(new EventLogging(event, "addClassToBranchPage"));
         return "addClassToBranch";
     }
 
@@ -429,6 +466,7 @@ public class AdminController {
         branch.getLevels().add(classe);
         branchService.saveBranch(branch);
         model.addAttribute("branches", branchService.getAllBranches());
+        eventLoggingService.save(new EventLogging(event, "addClassToBranch"));
         return "branches";
     }
 
@@ -442,6 +480,7 @@ public class AdminController {
         }
         model.addAttribute("classe", classe);
         model.addAttribute("modules", classe.getModules());
+        eventLoggingService.save(new EventLogging(event, "viewModulesOfClassPage"));
         return "modules";
     }
 
@@ -455,9 +494,8 @@ public class AdminController {
         }
         model.addAttribute("classe", classe);
         model.addAttribute("teachers", teacherService.findAll());
+        eventLoggingService.save(new EventLogging(event, "addTeacherToClassPage"));
         return "classes";
     }
-
-
 
 }

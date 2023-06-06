@@ -5,8 +5,10 @@ import com.smartschool.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class RoleService {
     @Autowired
     RoleRepository roleRepository;
@@ -55,6 +57,10 @@ public class RoleService {
         return roleRepository.saveAll(roles);
     }
 
+
+    public Role findByName(String name) {
+        return roleRepository.findByName(name);
+    }
 
 
 }
