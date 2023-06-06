@@ -55,5 +55,13 @@ public class ModuleService {
     }
 
 
+    public Module findByCode(String code) {
+        return moduleRepository.findByCode(code);
+    }
+
+    public Module findByName(String name) {
+        return moduleRepository.findByName(name);
+    }
+
 
 }

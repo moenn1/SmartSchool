@@ -50,6 +50,13 @@ public class LevelService {
         return levelRepository.findAllById(iterable);
     }
 
+    public Level findByCode(String code) {
+        return levelRepository.findByCode(code);
+    }
+
+    public Level findByName(String name) {
+        return levelRepository.findByName(name);
+    }
 
 
 }

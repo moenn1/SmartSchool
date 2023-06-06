@@ -54,4 +54,12 @@ public class StudentService {
         return studentRepository.saveAll(students);
     }
 
+    public Student findByCne(String cne) {
+        return studentRepository.findByCne(cne);
+    }
+
+    public Student findByName(String name){
+        return studentRepository.findByLname(name);
+    }
+
 }

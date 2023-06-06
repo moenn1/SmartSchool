@@ -13,7 +13,7 @@ public class SmartschoolApplication {
 
 	public static void main(String[] args) {
 
-		//SpringApplication.run(SmartschoolApplication.class, args);
+		/*//SpringApplication.run(SmartschoolApplication.class, args);
 		//Generate data and save to database
 		ApplicationContext context = SpringApplication.run(SmartschoolApplication.class, args);
 		//generate user
@@ -46,7 +46,8 @@ public class SmartschoolApplication {
 		AccountRepository accountRepository = context.getBean(AccountRepository.class);
 		accountRepository.save(account);
 
-
+	*/
+		SpringApplication.run(SmartschoolApplication.class, args);
 
 
 	}

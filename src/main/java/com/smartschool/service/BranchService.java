@@ -52,5 +52,12 @@ public class BranchService {
         return branchRepository.findAllById(iterable);
     }
 
+    public Branch findByCode(String code) {
+        return branchRepository.findByCode(code);
+    }
+
+    public Branch findByName(String name) {
+        return branchRepository.findByName(name);
+    }
 
 }

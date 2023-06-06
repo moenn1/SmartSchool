@@ -5,17 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f2c9f3f-9e4f-49d0-aca4-711e7bf94f24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/util/GenerateData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addStudent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/studentOverview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/SmartschoolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/SmartschoolApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/pojo/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/BranchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/BranchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/LevelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/LevelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/ModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/ModuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/BranchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/BranchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/LevelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/LevelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/ModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/ModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartschool/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartschool/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/SmartschoolApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/SmartschoolApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Module.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/pojo/Module.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/BranchRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/BranchRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/LevelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/LevelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/ModuleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/ModuleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/BranchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/BranchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/LevelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/LevelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/ModuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/ModuleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartschool/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartschool/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +52,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,7 +91,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/amine en nassibi/Downloads/Hunterzpro/Hunterzpro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amine en nassibi/Desktop/smartschool/src/main/java/com/smartschool&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,6 +103,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amine en nassibi\Desktop\smartschool\src\main\java\com\smartschool" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.SmartschoolApplication">
     <configuration name="GenerateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.smartschool.util.GenerateData" />
@@ -119,10 +150,29 @@
       <workItem from="1683217136739" duration="10263000" />
       <workItem from="1683297940342" duration="6202000" />
       <workItem from="1683331523001" duration="2379000" />
+      <workItem from="1683394747790" duration="1232000" />
+      <workItem from="1683482995362" duration="2709000" />
+      <workItem from="1683657564147" duration="39000" />
+      <workItem from="1683658197377" duration="324000" />
+      <workItem from="1685369683601" duration="601000" />
+      <workItem from="1685989598091" duration="680000" />
+      <workItem from="1686014168736" duration="733000" />
+      <workItem from="1686014955103" duration="3613000" />
+      <workItem from="1686019097769" duration="1125000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

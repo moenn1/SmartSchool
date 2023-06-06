@@ -34,8 +34,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+        http.csrf().disable()
                 .authorizeRequests()
+                .antMatchers("/superAdmin/**").hasAnyRole("SUPER_ADMIN")
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/student/**").hasRole("STUDENT")
                 .antMatchers("/teacher/**").hasRole("TEACHER")
@@ -47,12 +48,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .logout()
                 .logoutSuccessUrl("/login");
+
     }
 
     @Bean
     public RoleHierarchy roleHierarchy() {
         RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
-        roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_TEACHER and ROLE_STUDENT");
+        roleHierarchy.setHierarchy("ROLE_SUPER_ADMIN > ROLE_ADMIN \n ROLE_ADMIN > ROLE_TEACHER and ROLE_STUDENT");
         return roleHierarchy;
     }
 

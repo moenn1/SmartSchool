@@ -16,6 +16,9 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
+    private String cne;
+
     private String username;
     private String email;
 
@@ -94,7 +97,7 @@ public class Account {
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "role_id", nullable = false)
+    @JoinColumn(name = "role_id")
     private Role role;
 
 

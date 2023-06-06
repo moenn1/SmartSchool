@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
+    Student findByCne(String cne);
+
+    Student findByLname(String name);
 }
